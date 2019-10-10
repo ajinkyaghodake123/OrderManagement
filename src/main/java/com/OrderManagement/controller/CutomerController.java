@@ -78,7 +78,7 @@ public class CutomerController {
 	
 
 	@RequestMapping(value = "/schedular", method = RequestMethod.GET)
-	@Scheduled(cron = "0 54 15 * * ?")
+	@Scheduled(cron = "0 30 15 * * ?")
 	public void scheduleTaskUsingCronExpression() {
 	  
 		List<CustomerModel> customerModel = getAllCutomers() ;
